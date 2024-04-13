@@ -4,7 +4,6 @@ const removeFromArray = function(arr, ...elToRmv) {
         arr = arr.filter(element=>element !== el);        
     });
     return arr;
-
 };
 
 // Do not edit below this line
