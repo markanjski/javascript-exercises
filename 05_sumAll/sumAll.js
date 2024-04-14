@@ -1,19 +1,20 @@
-const sumAll = function(a, b) {
-    let start, end, sum = 0;
-    if (a>b) {
-        start = b;
-        end = a;
-    }else {
-        start = a;
-        end = b;
-    }
-    console.log(start, end);
-    while (start <= end){
-        sum += start;
-        start++;
-    }
-    return sum;
-
+const sumAll = function (start, end) {
+  if (
+    !Number.isInteger(start) ||
+    !Number.isInteger(end) ||
+    start < 0 ||
+    end < 0
+  )
+    return "ERROR";
+  let sum = 0;
+  if (start > end) {
+    [start, end] = [end, start];
+  }
+  console.log("XXXXXXXXXX", start, end);
+  for (let i = start; i <= end; i++) {
+    sum += i;
+  }
+  return sum;
 };
 
 // Do not edit below this line
