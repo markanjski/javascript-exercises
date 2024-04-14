@@ -1,8 +1,11 @@
-const add = function() {
+const add = function(...arr) {
+  return 
+  
 	
 };
 
-const subtract = function() {
+const subtract = function(a, b) {
+  return a - b;
 	
 };
 
